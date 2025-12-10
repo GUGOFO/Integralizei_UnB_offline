@@ -10,7 +10,7 @@ O **Integralizei UnB OffLine** é uma reengenharia completa do projeto original 
 ---
 
 ## 2. Sem Inteligência Artificial
-Este projeto adota uma diretriz rigorosa: **a lógica do software é 100% humana**, isso fara com que eu realmente tenha que aprender como fazer cada linha de codigo colocada nesse site e diminuindo minha dependencia NA IA.
+Este projeto adota uma diretriz rigorosa: **a lógica do software é 100% humana**, isso fara com que eu realmente tenha que aprender como fazer cada linha de codigo colocada nesse site e diminuindo minha dependencia na IA.
 
 Irei deixar claro a existencia de uma exceção, farei uso de IAs para arrumar textos com .md e fazer resumos do meu progresso.
 
