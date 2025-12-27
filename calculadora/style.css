@@ -1,0 +1,86 @@
+#header{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+}
+
+#header h1, 
+#header h3, 
+#header h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#boxes{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+    gap:20px;
+}
+
+.box{
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 440px;
+    height: 500px;
+
+    background: linear-gradient(to top,#003366,#006633);
+    color: white;
+    box-shadow: 2px 2px 10px black;
+}
+
+.pesquisa{
+    display: flex;  
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding-left: 10px;
+    gap: 80%;
+}
+
+.cinzinha{
+    background-color: gray;
+    border-radius: 10px;
+
+    display:flex;  
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.cinzinha p{
+    font-size: 12px;
+}
+
+.branquinha{
+    background-color: white;
+    color: #003366;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.branquinha h3,
+.branquinha h5,
+.branquinha h6 {
+    margin: 4px;
+    margin-left: 20px;
+}
+
+.PDF{
+    display:flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #006633;
+
+    height: 50px;
+    border-radius: 15px;
+}
