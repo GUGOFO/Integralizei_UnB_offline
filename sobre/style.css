@@ -1,0 +1,30 @@
+.sobre_o_projeto{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.criadores{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+#criador{
+    background: linear-gradient(to top,#003366,#006633);
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+#criador img{
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: black 3px solid;
+}
