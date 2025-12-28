@@ -1,4 +1,40 @@
-/*Header*/
+/*NAVBAR INICIO*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar #botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} 
+
+ #botoes #box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to top,#003366,#006633);
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+ }
+
+.navbar img{
+    height: 40px;
+}
+
+/*NAVBAR FIM*/
+
 
 #header{
     display: flex;
