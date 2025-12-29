@@ -226,6 +226,25 @@ body {
     gap: 5px;
 }
 
+.add-btn {
+    background: var(--unb-azul); 
+    border: none;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #002244;
+}
+
 .delete-btn {
     background: #ffe5e5; 
     border: none;
