@@ -49,7 +49,7 @@ body {
 
 .card-painel {
     width: 400px;
-    min-height: 500px;
+    height: 500px; /* ALTERADO: Altura fixa e maior para forçar o layout */
     background: var(--gradiente-unb);
     border-radius: 15px;
     padding: 25px;
@@ -59,6 +59,36 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.materia-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; /* Ocupa todo o espaço sobrando */
+    
+    /* ALTERADO: Isso cria o Scroll */
+    overflow-y: auto; 
+    padding-right: 5px; /* Espacinho para a barra de rolagem não colar no card */
+}
+
+/* --- NOVO: Estilização da Barra de Rolagem (Fica mais moderno) --- */
+.materia-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.materia-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.materia-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.materia-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .card-header h2 {
