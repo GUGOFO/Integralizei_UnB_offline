@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre - Integralizei UnB</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../navbar.css">
     <script src="https://kit.fontawesome.com/cbdc817e30.js" crossorigin="anonymous"></script>
@@ -11,69 +11,78 @@
 <body>
 
     <nav class="navbar">
-        <a href="http://127.0.0.1:5500/sobre/" class="logo-area">
+        <a href="http://127.0.0.1:5500/sobre/index.html" class="logo-area">
             <img src="../fotos/logo_UnB.png" alt="Logo UnB">
             <span class="logo-text">Integralizei UnB</span>
         </a>
-
         <div class="botoes-container">
-            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn">
-                <i class="fa-solid fa-chart-column"></i>
-                <p>DADOS</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn">
-                <i class="fa-solid fa-calculator"></i>
-                <p>CALCULADORA</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/sobre/" class="nav-btn">
-                <i class="fa-regular fa-circle-question"></i>
-                <p>SOBRE</p>
-            </a>
+            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn"><i class="fa-solid fa-chart-column"></i><p>DADOS</p></a>
+            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn"><i class="fa-solid fa-calculator"></i><p>CALC</p></a>
+            <a href="http://127.0.0.1:5500/sobre/index.html" class="nav-btn"><i class="fa-regular fa-circle-question"></i><p>SOBRE</p></a>
         </div>
     </nav>
-    
-    <div class="sobre_o_projeto">
-        <h1 id="titulo">Sobre o Projeto</h1>
-        <p id="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora vitae nam ex nemo incidunt, at praesentium quae exercitationem. Iusto hic sapiente aliquid architecto qui doloribus soluta totam et doloremque sint!</p>
-        <p id="paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iure quae consectetur totam inventore! Ab unde eum nulla temporibus amet odio aliquam quisquam enim magnam, debitis nemo, totam tempora quia!</p>
-    </div>
 
-    <div class="sobre_o_projeto">
-        <h1 id="sub-titulo">Criadores originais</h1>
-        <div class="criadores">
-            <div id="criador">
-                <img src="imgs/ana.jpeg" alt="Foto da pessoa">
-                <p>Ana Beatriz</p>
-            </div>
+    <main class="container-principal">
+        
+        <section id="page-header">
+            <h1>Sobre o Projeto</h1>
+            
+            <div id="texto-conteudo">
+                <p>O <strong>Integralizei UnB</strong> é um sistema desenvolvido para facilitar a vida acadêmica dos estudantes da Universidade de Brasília.</p>
                 
-            <div id="criador">
-                <img src="imgs/carol.jpg" alt="">
-                <p>Ana Caroline</p>
+                <p>A aplicação realiza o processamento automático do histórico escolar (PDF do SIGAA) e organiza as informações de forma clara e intuitiva, permitindo ao aluno visualizar sua integralização, créditos, disciplinas cursadas, IRA, e muito mais.</p>
+                
+                <p>O projeto foi desenvolvido como parte da disciplina de <strong>Métodos de Desenvolvimento de Software (MDS)</strong> e é resultado do esforço de um time colaborativo focado em construir uma ferramenta útil, moderna e acessível para toda a comunidade acadêmica.</p>
             </div>
+        </section>
 
-            <div id="criador">
-                <img src="imgs/carol2jpeg.jpeg" alt="">
-                <p>Caroline Becker</p>
+        <section id="page-header">
+            <h1>Criadores Originais</h1>
+            
+            <div class="grid-criadores">
+                <div class="card-criador">
+                    <img src="../fotos/imgs/ana.jpeg" alt="Ana Beatriz">
+                    <p>Ana Beatriz Souza</p>
+                </div>
+                
+                <div class="card-criador">
+                    <img src="../fotos/imgs/carol.jpg" alt="Ana Caroline">
+                    <p>Ana Caroline Dantas</p>
+                </div>
+
+                <div class="card-criador">
+                    <img src="../fotos/imgs/carol2jpeg.jpeg" alt="Caroline Becker">
+                    <p>Caroline Becker</p>
+                </div>
+
+                <div class="card-criador">
+                    <img src="../fotos/imgs/paulo.jpg" alt="Paulão">
+                    <p>Paulo</p>
+                </div>
+
+                <div class="card-criador">
+                    <img src="../fotos/imgs/gustavo.jpeg" alt="Gustavo">
+                    <p>Gustavo Fornaciari</p>
+                </div>
+
+                <div class="card-criador">
+                    <img src="../fotos/imgs/enzo.jpg" alt="Enzo">
+                    <p>Enzo Menaz</p>
+                </div>
             </div>
+        </section>
 
-            <div id="criador">
-                <img src="imgs/paulo.jpg" alt="">
-                <p>Paulão</p>
-            </div>
-
-            <div id="criador">
-                <img src="imgs/gustavo.jpeg" alt="">
+        <section id="page-header">
+            <h1>Criador do Offline</h1>
+            
+            <div class="card-criador">
+                <img src="../fotos/imgs/gustavo.jpeg" alt="Gustavo">
                 <p>Gustavo Fornaciari</p>
             </div>
 
-            <div id="criador">
-                <img src="imgs/enzo.jpg" alt="">
-                <p>Enzo Menaz</p>
-            </div>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
 </body>
 </html>

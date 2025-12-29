@@ -1,30 +1,110 @@
-.sobre_o_projeto{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+--gradiente-unb: linear-gradient(to top, #003366, #006633);
+    --unb-verde: #006633;
+    --unb-azul: #003366;
+    --barra-de-progresso: #00e676;
+    --text-preto: #333;
+    --text-branco: #ffffff;
+    --text-cinza: #555;
+    --background: #f9f9f9;
+    --font-family-base: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-base);
+    color: var(--text-preto);
+}
+
+.container-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
-    flex-direction: column;  
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+#page-header {
     text-align: center;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.criadores{
+#page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+    color: var(--unb-azul); 
+    background-image: var(--gradiente-unb);
+  
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+#texto-conteudo {
+    max-width: 800px; 
+    color: var(--text-cinza);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.texto-conteudo p {
+    margin-bottom: 15px;
+}
+
+.grid-criadores {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    width: 700px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    max-width: 800px; 
+    margin: 0 auto;
 }
 
-#criador{
-    background: linear-gradient(to top,#003366,#006633);
-    width: 150px;
-    padding: 20px;
+.card-criador {
+    width: 200px;
+    height: 200px;
+    
+    background: var(--gradiente-unb);
     border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
     color: white;
+    transition: transform 0.2s ease;
 }
 
-#criador img{
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: black 3px solid;
+.card-criador:hover {
+    transform: translateY(-5px); /* Efeito suave ao passar o mouse */
+}
+
+.card-criador img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    object-fit: cover;  /* Garante que a foto não fique esticada */
+    border: 3px solid rgba(255, 255, 255, 0.2); /* Borda sutil em volta da foto */
+}
+
+.card-criador p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
 }

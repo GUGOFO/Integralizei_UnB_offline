@@ -1,173 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Dados - Integralizei UnB</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../navbar.css">
-    <script src="https://kit.fontawesome.com/cbdc817e30.js" crossorigin="anonymous"></script>
-    <title>Dados</title>
 </head>
 
 <body>
 
     <nav class="navbar">
-        <a href="http://127.0.0.1:5500/sobre/" class="logo-area">
+        <a href="http://127.0.0.1:5500/sobre/index.html" class="logo-area">
             <img src="../fotos/logo_UnB.png" alt="Logo UnB">
             <span class="logo-text">Integralizei UnB</span>
         </a>
-
         <div class="botoes-container">
-            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn">
-                <i class="fa-solid fa-chart-column"></i>
-                <p>DADOS</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn">
-                <i class="fa-solid fa-calculator"></i>
-                <p>CALCULADORA</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/sobre/" class="nav-btn">
-                <i class="fa-regular fa-circle-question"></i>
-                <p>SOBRE</p>
-            </a>
+            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn"><i class="fa-solid fa-chart-column"></i><p>DADOS</p></a>
+            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn"><i class="fa-solid fa-calculator"></i><p>CALC</p></a>
+            <a href="http://127.0.0.1:5500/sobre/index.html" class="nav-btn"><i class="fa-regular fa-circle-question"></i><p>SOBRE</p></a>
         </div>
     </nav>
 
-    <div id = "header">
+    <header id="page-header">
         <h1>Meus Dados</h1>
-        <h3>GUSTAVO GOMES FORNACIARI - 241032519</h3>
-        <h4>ENGENHARIA DE SOFTWARE/FCTE - BACHARELADO - DIURNO</h4>
-    </div>
+        <p id="username">GUSTAVO GOMES FORNACIARI — 241032519</p>
+        <p id="curso">ENGENHARIA DE SOFTWARE/FCTE — BACHARELADO — DIURNO</p>
+    </header>
 
-    <br>
+    <main class="dashboard-container">
 
-    <div id="dados">
-        <div class="dados_especificos">
-            <h3>IRA Atual</h3>
-            <h1><b>4.2469</b></h1>
-            <h5>Indice de Rendimento Academico</h5>
-        </div>
+        <section class="row-cards">
+            
+            <div class="card-info">
+                <h3>IRA Atual</h3>
+                <h1 class="big-number">4.2469</h1>
+                <p class="subtitle">Índice de Rendimento Acadêmico</p>
+            </div>
 
-        <div class="dados_especificos">
-            <h3>Integralização</h3>
-            <h1>31.4%</h1>
-            <h5>810h / 2580h</h5>
-        </div>
+            <div class="card-info">
+                <h3>Integralização</h3>
+                <h1 class="big-number">31.4%</h1>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 31.4%;"></div>
+                </div>
+                
+                <p class="subtitle">810h / 2580h</p>
+            </div>
 
-        <div class="dados_especificos">
-            <h3>Disciplinas</h3>
-            <h1>21</h1>
-            <h5>Matérias concluidas / matriculádas</h5>
-        </div>
-    </div>
+            <div class="card-info">
+                <h3>Disciplinas</h3>
+                <h1 class="big-number">21</h1>
+                <p class="subtitle">Matérias concluídas/matriculadas</p>
+            </div>
 
-    <br>
+        </section>
 
-    <div id="Sugestões">
+        <section class="row-grande">
+            <div class="card-info grande">
+                <h3>Matérias Pendentes</h3>
+                <p class="desc">Algumas matérias obrigatórias para você pegar no próximo semestre</p>
+                <div class="loader">Carregando sugestões...</div>
+            </div>
 
-        <div class="dados_especificos">
-            <h3>Materias Pendentes</h3>
-            <h5>Algumas matérias para voce pegar no proximo semestre</h5>
-            <h5>carregando...</h5>
-        </div>
+            <div class="card-info grande">
+                <h3>Sugestões de Optativas</h3>
+                <p class="desc">Algumas sugestões de matérias para você pegar semestre que vem</p>
+                <div class="loader">Carregando sugestões...</div>
+            </div>
 
-        <div class="dados_especificos">
-            <h3>Sugestões de Optativa</h3>
-            <h5>Algumas matérias para voce pegar no proximo semestre</h5>
-            <h5>carregando...</h5>
-        </div>
+        </section>
 
-    </div>
+        <section class="historico-section">
+            <h3>Histórico Detalhado</h3>
+            
+            <div class="table-container">
+                <table id="tabela-historico">
+                    <thead>
+                        <tr>
+                            <th>Período</th>
+                            <th>Código</th>
+                            <th>Disciplina</th>
+                            <th>Menção</th>
+                            <th>Créditos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024/1</td>
+                            <td>CIC0004</td>
+                            <td>ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES</td>
+                            <td class="bold-ms">MS</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>2024/1</td>
+                            <td>MAT0025</td>
+                            <td>CÁLCULO 1</td>
+                            <td class="bold-ms">MM</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>2024/1</td>
+                            <td>FGA0168</td>
+                            <td>DESENHO INDUSTRIAL</td>
+                            <td class="bold-ms">SS</td>
+                            <td>60</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </section>
 
-    <div id="tablelinha_de_historicos">
-        <h3>Historico Detalhado</h3>
-
-        <table id="tabela">
-            <tr>
-                <th >Periodo</th>
-                <th >Código</th>
-                <th >Disciplina</th>
-                <th >Menção</th>
-                <th >Créditos</th>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-
-            <tr>
-                <td >2024/1</td>
-                <td >CIC0004</td>
-                <td >Algoritimo de programação foda</td>
-                <td  >MS</td>
-                <td >90</td>
-            </tr>
-        </table>
-
-    </div>
+    </main>
 
 </body>
-
 </html>

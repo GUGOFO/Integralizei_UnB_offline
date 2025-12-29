@@ -1,95 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora - Integralizei UnB</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../navbar.css">
-    <script src="https://kit.fontawesome.com/cbdc817e30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="http://127.0.0.1:5500/sobre/" class="logo-area">
+        <a href="http://127.0.0.1:5500/sobre/index.html" class="logo-area">
             <img src="../fotos/logo_UnB.png" alt="Logo UnB">
             <span class="logo-text">Integralizei UnB</span>
         </a>
-
         <div class="botoes-container">
-            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn">
-                <i class="fa-solid fa-chart-column"></i>
-                <p>DADOS</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn">
-                <i class="fa-solid fa-calculator"></i>
-                <p>CALCULADORA</p>
-            </a>
-
-            <a href="http://127.0.0.1:5500/sobre/" class="nav-btn">
-                <i class="fa-regular fa-circle-question"></i>
-                <p>SOBRE</p>
-            </a>
+            <a href="http://127.0.0.1:5500/dados/dados.html" class="nav-btn"><i class="fa-solid fa-chart-column"></i><p>DADOS</p></a>
+            <a href="http://127.0.0.1:5500/calculadora/index.html" class="nav-btn"><i class="fa-solid fa-calculator"></i><p>CALC</p></a>
+            <a href="http://127.0.0.1:5500/sobre/index.html" class="nav-btn"><i class="fa-regular fa-circle-question"></i><p>SOBRE</p></a>
         </div>
     </nav>
 
-    <div id = "header">
+    <header id="page-header">
         <h1>Calculadora</h1>
-        <h4>Busque matérias reais da UnB e simule sua Integralização do proximo semestre</h4>
-    </div>
-    <br>
-    <div id="boxes">
-        <div class="box">
-            <h2>Buscar Matérias</h2>
-            <p>2025.2</p>
+        <p>Busque matérias reais da UnB e simule sua integralização do próximo semestre</p>
+    </header>
 
-            <div class="pesquisa">
-                <p>oi</p>
-                <p>lupa</p>
+    <main id="main-container">
+        
+        <section class="card-painel">
+            <div class="card-header">
+                <h2>Buscar Matérias</h2>
+                <span class="semestre-label">2026.1</span>
             </div>
-            <br>
-            <div class="pesquisa">
-                <p>oi</p>
-                <p>lupa</p>
-            </div>
-            <br>
-        </div>
 
-        <div class="box">
-            <h2>Sua Simulação</h2>
-            <p>Matérias Selecionadas</p>
-
-            <div class="cinzinha">
-                <div>
-                    <h2>10</h2>
-                    <p>CRÉDITOS EXTRAS</p>
+            <div class="search-wrapper">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome da disciplina ou código...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 
-                <div>
-                    <h2>37.21%</h2>
+                <div class="input-group">
+                    <input type="text" placeholder="Professor (Opcional)">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div class="toggle-semestres">
+                <input type="radio" id="sem2026" name="semestre" class="pill-radio" checked>
+                <label for="sem2026" class="pill-label">2026.1 (Atual)</label>
+
+                <input type="radio" id="sem2025" name="semestre" class="pill-radio">
+                <label for="sem2025" class="pill-label">2025.2 (Anterior)</label>
+            </div>
+
+            <div class="empty-state">
+                <p>Nenhuma matéria encontrada com esses filtros.</p>
+            </div>
+        </section>
+
+        <section class="card-painel">
+            <div class="card-header">
+                <h2>Sua Simulação</h2>
+                <span class="semestre-label">Matérias selecionadas</span>
+            </div>
+
+            <div class="stats-box">
+                <div class="stat-item separator">
+                    <h3>10</h3>
+                    <p>CRÉDITOS EXTRAS</p>
+                </div>
+                <div class="stat-item">
+                    <h3>37.21%</h3>
                     <p>NOVA PREVISÃO</p>
                 </div>
             </div>
-            <br>
-            <div class="branquinha">
-                <h3>MAT0026</h3>
-                <h5>CÁLCULO 2</h5>
-                <H6>Luiza Yoko</H6>
+
+            <div class="materia-list">
+                
+                <div class="materia-item">
+                    <div class="materia-info">
+                        <div class="materia-top">
+                            <span class="codigo">MAT0026 - 14</span>
+                            <span class="creditos-tag">6 créditos</span>
+                        </div>
+                        <h4 class="materia-nome">CÁLCULO 2</h4>
+                        <div class="materia-prof">
+                            <i class="fa-regular fa-user"></i> LUIZA YOKO TANEGUTI
+                        </div>
+                    </div>
+                    <button class="delete-btn">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div>
+
+                <div class="materia-item">
+                    <div class="materia-info">
+                        <div class="materia-top">
+                            <span class="codigo">MAT0031 - 12</span>
+                            <span class="creditos-tag">4 créditos</span>
+                        </div>
+                        <h4 class="materia-nome">INTRODUCAO A ALGEBRA LINEAR</h4>
+                        <div class="materia-prof">
+                            <i class="fa-regular fa-user"></i> LUIZA YOKO TANEGUTI
+                        </div>
+                    </div>
+                    <button class="delete-btn">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </button>
+                </div>
+
             </div>
-            <br>
-            <div class="branquinha">
-                <h3>MAT0026</h3>
-                <h5>CÁLCULO 2</h5>
-                <H6>Luiza Yoko</H6>
-            </div>
-            <br>
-            
-            <div class="PDF">
-                Salvar Simlação (PDF)
-            </div>
-        </div>
-    </div>
+
+            <button class="btn-pdf">
+                <i class="fa-solid fa-file-arrow-down"></i> Salvar Simulação (PDF)
+            </button>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
