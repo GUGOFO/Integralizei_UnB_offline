@@ -30,7 +30,7 @@ Diferente da versão anterior baseada em microsserviços, esta versão funcionar
 
 ## 4. Stack Tecnológica
 - **Core:** Next.js + TypeScript
-- **Processamento de Arquivos:** PDF.js (Possivelmente)
+- **Processamento de Arquivos:** PDF.js / pdfjs-dist (Possivelmente)
 - **Persistência:** localStorage 
 - **Deploy:** Vercel ou GitHub Pages
 
